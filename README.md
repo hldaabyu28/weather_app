@@ -1,16 +1,19 @@
+![Screenshot (492)](https://github.com/user-attachments/assets/8557e2d7-6e17-488c-8a55-a7764bf90b9d)
+![Screenshot (503)](https://github.com/user-attachments/assets/bae4510f-f23d-454c-87fe-923ffc307a0e)
+
 # wheater_app
-
-A new Flutter project.
-
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Cara install aplikasi
 
-A few resources to get you started if this is your first Flutter project:
+``` Download build apk melalui link dibawah ini ```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+https://drive.google.com/file/d/1InhhEK-iuO2eTcgK6MVGut4couGF2bOv/view?usp=sharing
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```install aplikasi build apk di ponsel android```
+
+
+
+
+
+
