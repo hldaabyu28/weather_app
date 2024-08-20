@@ -1,4 +1,3 @@
-// lib/providers/weather_provider.dart
 
 import 'dart:convert';
 import 'package:flutter/material.dart';

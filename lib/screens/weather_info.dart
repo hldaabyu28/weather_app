@@ -34,11 +34,20 @@ class WeatherInfo extends StatelessWidget {
         ),
         Image.network('https://openweathermap.org/img/w/${weather.icon}.png', scale: 0.2),
         Text(
+          'Today',
+          style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.w500,
+              fontSize: 20,
+              fontFamily: GoogleFonts.plusJakartaSans().fontFamily,
+          ),
+        ),
+        Text(
           weather.description.characters.first.toUpperCase() + weather.description.substring(1),
           style: TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.w600,
-              fontSize: 25,
+              fontSize: 23,
               fontFamily: GoogleFonts.plusJakartaSans().fontFamily,
           ),
         ),
@@ -59,18 +68,18 @@ class WeatherInfo extends StatelessWidget {
             child: Container(
               height: 100,
               decoration: BoxDecoration(
-              color: Color(0xFF104084).withOpacity(0.3), // Latar belakang
-              borderRadius: BorderRadius.circular(15), // Radius sudut
+              color: Color(0xFF104084).withOpacity(0.3), 
+              borderRadius: BorderRadius.circular(15), 
             ),
               child: Center(
                 child: ListTile(
                   leading: Image.network('https://openweathermap.org/img/w/${forecast.icon}.png'),
-                  title: Text('${forecast.temperature.toStringAsFixed(0)}°C',   style: TextStyle(
+                  title: Text(forecast.formattedTemperature, style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.w600,
                     fontSize: 20,
                     fontFamily: GoogleFonts.plusJakartaSans().fontFamily,
-                  ),        
+                  ),
                 ),
                   subtitle: Text(forecast.description.characters.first.toUpperCase() + forecast.description.substring(1), style: TextStyle(
                     color: Colors.white,
