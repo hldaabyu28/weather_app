@@ -11,7 +11,7 @@ class WeatherScreen extends StatelessWidget {
 
   Color _getBackgroundColor(String description) {
   if (description.contains('clear')) {
-    return Color(0xFFCCE2FF); 
+    return Color(0xFF5EA1FF); 
   } else if (description.contains('clouds')) {
     return Color(0xFFA6C4DA); 
   } else if (description.contains('rain')) {

@@ -4,11 +4,13 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import '../models/weather_model.dart';
 
+// controller provider
 class WeatherProvider with ChangeNotifier {
   Weather? _weather;
 
   Weather? get weather => _weather;
 
+  // get api 
   Future<void> fetchWeather(String cityName) async {
     final apiKey = 'f2bcfd79137c0b070e356dffb97485a7';  
     final url = 'https://api.openweathermap.org/data/2.5/forecast?q=$cityName&appid=$apiKey';
@@ -24,7 +26,6 @@ class WeatherProvider with ChangeNotifier {
         throw Exception('Failed to load weather data');
       }
     } catch (error) {
-      
     }
   }
 }
